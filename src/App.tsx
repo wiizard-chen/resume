@@ -1,9 +1,13 @@
 import type { Component } from "solid-js";
-import logo from "./logo.svg";
-import styles from "./App.module.css";
+import BasicInfo from "./parts/basicInfo";
 
 const App: Component = () => {
-  return <div class={styles.App}></div>;
+  return (
+    <div class="flex">
+      <BasicInfo />
+      <BasicInfo />
+    </div>
+  );
 };
 
 export default App;
