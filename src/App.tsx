@@ -5,7 +5,7 @@ const App: Component = () => {
   return (
     <div class="flex">
       <BasicInfo />
-      <BasicInfo />
+      {/* <BasicInfo /> */}
     </div>
   );
 };
