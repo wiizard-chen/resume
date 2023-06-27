@@ -34,9 +34,9 @@ const WorkConpany = () => {
         return (
           <section class="work-experience">
             <div class="work-title">
-              <h4>{info.name}</h4>
-              <h4>{info.job}</h4>
-              <h4>{info.time}</h4>
+              <h3>{info.name}</h3>
+              <h3>{info.job}</h3>
+              <h3>{info.time}</h3>
             </div>
             <WorkList infos={info.projectExperience} />
           </section>

@@ -15,8 +15,8 @@ const DividerLine = () => {
 
 const BasicInfo: Component = () => {
   return (
-    <div class="m-32px">
-      <h1 class="ml-32px mr-32px">前端开发工程师-陈伟梓</h1>
+    <div id="id-div-head">
+      <h1>前端开发工程师-陈伟梓</h1>
       <div class="flex">
         <div>
           <label for="">姓名：</label>

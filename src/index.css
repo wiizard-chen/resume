@@ -3,7 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif; */
+  font-family: BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei,
+    Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
 }
 
 @media print {
@@ -11,10 +12,6 @@
     size: 210mm 297mm; /* or size: 794px 1123px;   */
     size: 297mm 420mm; /* or size: 1123px 1588px;  */
   }
-}
-
-b {
-  font-weight: 800;
 }
 
 html,
@@ -26,6 +23,7 @@ body {
 
 #root {
   padding: 32px;
+  font-weight: 340;
 }
 
 #id-div-head {
@@ -36,30 +34,11 @@ body {
   margin-bottom: 32px;
 }
 
-#id-div-head > .info-box {
-  display: flex;
-}
-
-.avatar {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  border: 5px solid #f6f6f6;
-  margin-bottom: 32px;
-}
-
-.divider-v {
-  width: 3px;
-  height: 22px;
-  background-color: #ddd;
-  margin: 0 12px;
-}
-
 /* 主体 */
 
 .area {
   margin-left: 40px;
-  padding: 35px 0;
+  padding: 24px 0;
   /* border-top: 3px solid rgb(228, 228, 228); */
 }
 
@@ -78,29 +57,13 @@ body {
   transform: translateX(-15px);
 }
 
-.title > h4 {
-  margin: 16px;
-}
-
-/* 图片展示 */
-
-.imgs-box > img {
-  width: 100%;
-  margin-top: 24px;
-}
-
-.h5 {
+.work-title {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-.h5 > .mobile {
-  width: 45%;
-  object-fit: contain;
-}
-
-.h5 > .game {
-  /* height: 70%; */
+.work-experience {
+  margin: 16px 0;
 }
 
 .edu-title {
@@ -109,20 +72,14 @@ body {
   justify-content: space-between;
 }
 
-.work-experience {
-  margin: 8px 0;
-}
-
 .work-container {
   margin-left: 16px;
 }
-.work-title {
-  margin: 4px;
-  display: flex;
-  justify-content: space-between;
-}
 
 .work-description {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
   margin: 8px;
 }
 
@@ -134,15 +91,26 @@ body {
   /* color: rgb(12, 175, 230); */
   line-height: 24px;
   list-style: none;
+  font-size: 18px;
 }
 
 .work-responsible li:before {
   content: "• ";
   color: rgb(12, 175, 230);
+  font-size: 24px;
+  /* background-color: rgb(12, 175, 230); */
+  /* width: 8px; */
+  /* height: 8px; */
+  /* content: " "; */
+  /* display: inline-block; */
+  /* position: relative; */
+  /* border-radius: 4px; */
+  /* margin-right: 4px; */
+  /* bottom: 2px; */
 }
 
 .work-description :first-child {
-  font-weight: 500;
+  font-weight: bold;
 }
 
 li > span {
