@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div id="id-div-app">
+      <!-- 个人信息 -->
+      <div id="id-div-head" class="head">
+        <!-- <img
+                src="./imgs/avatar.png"
+                class="avatar"
+            > -->
+        <h1 style="margin: 32px 0">前端开发工程师-陈伟梓</h1>
+        <div class="info-box">
+          <div class="info-item">
+            <label for="">姓名：</label>
+            <span>陈伟梓</span>
+          </div>
+          <div class="divider-v"></div>
+          <div class="info-item">
+            <label for="">电话：</label>
+            <span>13824453814</span>
+          </div>
+
+          <div class="divider-v"></div>
+          <div class="info-item">
+            <label for="">邮箱：</label>
+            <span>wiizard-chen@outlook.com</span>
+          </div>
+          <div class="divider-v"></div>
+          <div class="info-item">
+            <label for="">应聘：</label>
+            <span>前端开发工程师</span>
+          </div>
+        </div>
+      </div>
+      <!-- 内容 -->
+      <div id="id-div-body">
+        <div class="area">
+          <h2>教育经历</h2>
+          <div class="edu-title">
+            <h3>广州大学</h3>
+            <h3>2012-2016</h3>
+            <h3>本科( 统一招生)</h3>
+          </div>
+        </div>
+
+        <!-- 工作经历 -->
+        <div class="area">
+          <h2>工作经历</h2>
+          <section class="work-experience">
+            <div class="work-title">
+              <h4>北京字节跳动科技有限公司</h4>
+              <h4>前端开发工程师</h4>
+              <h4>2020.06 - 2023.07</h4>
+            </div>
+
+            <div class="work-container">
+              <div class="work-description">
+                <div>ByteCycle 平台 (DevOps 平台)</div>
+                <div>
+                  整合字节内部研发工具，打造「需求-研发-测试-交付-度量」的一站式研发管理平台。ByteCycle
+                  使得构建、测试、发布软件能够更加地快捷、频繁和可靠。
+                </div>
+              </div>
+
+              <div class="work-responsible">
+                <li>
+                  <span>
+                    负责前端团队的研发流程的<b>最佳实践方案</b>制定,
+                    覆盖需求分析 -> 研发流程 -> 发布流程 -> 线上监控等阶段
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    负责平台的架构升级, 改造成 <b>Module Federation 微前端</b> ,
+                    提供单模块单独发布能力. 解耦各个模块的发版依赖.
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    负责 ByteCycle 的流水线, 可观测, 变量模块的需求研发与排期,
+                    优化模块中的存量代码, 并输出规范<b>防止代码劣化.</b>
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    优化 ByteCycle 平台页面性能, 治理页面关键指标,
+                    <b>FP, FCP, LCP 等指标低于 1s.</b>
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    负责平台的国际化工作, 产出统一的国际化方案,
+                    包含静态资源和动态资源国际化方案, 提供一键式改造插件
+                  </span>
+                </li>
+              </div>
+            </div>
+
+            <div class="work-container">
+              <div class="work-description">
+                <div>Argos 数据监控平台 (APM 平台)</div>
+                <div>
+                  基于指标监控、日志、报警、链路追踪一站式可观测和诊断平台。提供丰富的可视化能力,
+                  实时观察应用的健康状况.
+                </div>
+              </div>
+              <div class="work-responsible">
+                <li>
+                  <span>
+                    负责构建 Argos 平台的核心模块, 统一前端项目中的
+                    <b
+                      >开发规范, 联调规范并推动, 实现平台元数据的公用库,
+                      降低人力接入成本</b
+                    >
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    负责 Argos 核心模块需求评审,
+                    <b>技术方案调研, 任务拆分&估期, 以及人力调配.</b>
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    负责 Argos 平台性能优化, 项目架构升级为微前端 Module
+                    Federation, 优化 Webpack 分包策略
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    负责 Argos 平台的容灾方案制定并实施,
+                    推动横向团队的配合并实施
+                  </span>
+                </li>
+              </div>
+            </div>
+
+            <div class="work-container">
+              <div class="work-description">
+                <div>自定义看板平台 (Dashboard 平台)</div>
+                <div>
+                  集数据查询, 数据分析, 数据可视化, 事件报警功能的监控云平台.
+                  通过精致, 灵活的仪表板创建、探索和共享所有数据.
+                </div>
+              </div>
+
+              <div class="work-responsible">
+                <li>
+                  <span>
+                    从零开始构建看板平台, 负责技术选型, 项目技术栈有
+                    <b>React, uplot, arco-design, jotai, react-grid-layout. </b>
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    支持各个业务团队对监控数据源的需求, 如<b
+                      >抖音电商双十一活动, 抖音 2022年春节活动</b
+                    >, 提供可靠稳定的实时应用监控.
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    负责平台性能优化, 在单页面展示上千图表场景下, 网站性能 FCP,
+                    FP 指标低于 1s, TTI 低于 1.5s.
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    整理业务图表诉求, 开发 <b> Metrics 图表 SDK </b>,
+                    实现横向平台低门槛消费 metrics 数据的诉求,
+                    大幅降低团队内可视化成本
+                  </span>
+                </li>
+              </div>
+            </div>
+          </section>
+
+          <section class="work-experience">
+            <div class="work-title">
+              <h4>广州友财信息科技有限公司</h4>
+              <h4>全栈开发工程师</h4>
+              <h4>2016.06 - 2020.04</h4>
+            </div>
+
+            <div class="work-container">
+              <div class="work-description">
+                <div>中山大学收费管理平台</div>
+                <div>
+                  为各大高校财务工作中的收费业务, 提供一套完整, 可靠的解决方案.
+                  平台前端技术栈 <b>Vue, Vuex, Vue Router, Element UI</b>
+                </div>
+              </div>
+              <div class="work-responsible">
+                <li>
+                  <span>
+                    从零构建三个系统, 后台管理系统,
+                    PC端的收费⻔户以及移动端的收费⻔户
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    负责该平台的前端技术选型, 前端项目架构设计,
+                    以及制定项目部署方案
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    负责前端公共组件设计与开发, 为公司提供一套通用前端组件库
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    负责构建该平台的开发环境与生产环境, CI系统, API文档管理系统,
+                    项目管理系统
+                  </span>
+                </li>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="area">
+          <h2>专业技能</h2>
+          <div class="work-responsible">
+            <li>
+              <span>
+                熟练使用
+                <b> Webpack </b>
+                进行网站性能优化，包括代码分割、按需加载和资源压缩等，有效提升网站加载速度和运行效率，为用户带来更优秀的体验。
+              </span>
+            </li>
+            <li>
+              <span>
+                <b> API性能监控 </b>
+                有深入了解，能够针对性地提出合理的优化方案并进行实施，从而提升系统整体性能，保证项目稳定高效运行。
+              </span>
+            </li>
+            <li>
+              <span>
+                精通 <b> React Hooks技术 </b>
+                ，可以灵活地构建高质量的React组件。同时，熟悉各类React状态库的使用，如Redux和MobX等，能够根据项目需求选择合适的状态管理方案进行高效的组件开发和状态管理。
+              </span>
+            </li>
+            <li>
+              <span>
+                深入了解<b> Webpack的核心原理和配置 </b
+                >，具备调整和优化Webpack配置的能力，能够根据项目需求进行适当的配置调整，提高开发和构建效率。
+              </span>
+            </li>
+            <li>
+              <span>
+                熟练掌握<b> TypeScript编程语言 </b
+                >，熟悉其类型系统和类型推导等特性，能编写高稳定性且具有强灵活度的前端项目，降低维护成本和潜在错误风险。
+              </span>
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
