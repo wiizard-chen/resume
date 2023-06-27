@@ -1,11 +1,17 @@
 import type { Component } from "solid-js";
 import BasicInfo from "./parts/basicInfo";
+import EduInfo from "./parts/eduInfo";
+import DividerLine from "./parts/dividerLine";
+import WorkExp from "./parts/workExp";
 
 const App: Component = () => {
   return (
-    <div class="flex">
+    <div id="id-div-app" class="">
       <BasicInfo />
-      {/* <BasicInfo /> */}
+      <DividerLine />
+      <EduInfo />
+      <DividerLine />
+      <WorkExp />
     </div>
   );
 };

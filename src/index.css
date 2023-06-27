@@ -1,13 +1,150 @@
-body {
+* {
+  -webkit-print-color-adjust: exact;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media print {
+  @page {
+    size: 210mm 297mm; /* or size: 794px 1123px;   */
+    size: 297mm 420mm; /* or size: 1123px 1588px;  */
+  }
+}
+
+b {
+  font-weight: 800;
+}
+
+html,
+body {
+  /* width: 28cm; */
+  overflow-x: hidden;
+  font-weight: 340;
+}
+
+#root {
+  padding: 32px;
+}
+
+#id-div-head {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+#id-div-head > .info-box {
+  display: flex;
+}
+
+.avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 5px solid #f6f6f6;
+  margin-bottom: 32px;
+}
+
+.divider-v {
+  width: 3px;
+  height: 22px;
+  background-color: #ddd;
+  margin: 0 12px;
+}
+
+/* 主体 */
+
+.area {
+  margin-left: 40px;
+  padding: 35px 0;
+  /* border-top: 3px solid rgb(228, 228, 228); */
+}
+
+.area > h2 {
+  position: relative;
+  line-height: 30px;
+}
+
+.area > h2::before {
+  content: " ";
+  width: 8px;
+  height: 100%;
+  background-color: rgb(12, 175, 230);
+  position: absolute;
+  left: 0;
+  transform: translateX(-15px);
+}
+
+.title > h4 {
+  margin: 16px;
+}
+
+/* 图片展示 */
+
+.imgs-box > img {
+  width: 100%;
+  margin-top: 24px;
+}
+
+.h5 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.h5 > .mobile {
+  width: 45%;
+  object-fit: contain;
+}
+
+.h5 > .game {
+  /* height: 70%; */
+}
+
+.edu-title {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.work-experience {
+  margin: 8px 0;
+}
+
+.work-container {
+  margin-left: 16px;
+}
+.work-title {
+  margin: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.work-description {
+  margin: 8px;
+}
+
+.work-responsible {
+  margin-left: 16px;
+}
+
+.work-responsible > ul {
+  /* color: rgb(12, 175, 230); */
+  line-height: 24px;
+  list-style: none;
+}
+
+.work-responsible li:before {
+  content: "• ";
+  color: rgb(12, 175, 230);
+}
+
+.work-description :first-child {
+  font-weight: 500;
+}
+
+li > span {
+  color: #000;
 }
