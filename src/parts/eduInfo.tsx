@@ -1,5 +1,3 @@
-import type { Component } from "solid-js";
-
 const EduInfo = () => {
   return (
     <div class="area">
