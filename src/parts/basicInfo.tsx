@@ -1,4 +1,5 @@
 import type { Component } from "solid-js";
+import { basicInfo } from "./resumeContent";
 
 const DividerLine = () => {
   return (
@@ -16,32 +17,32 @@ const DividerLine = () => {
 const BasicInfo: Component = () => {
   return (
     <div id="id-div-head">
-      <h1>前端开发工程师-陈伟梓</h1>
+      <h1>{basicInfo.header}</h1>
       <div class="flex">
         <div>
           <label for="">姓名：</label>
-          <span>陈伟梓</span>
+          <span>{basicInfo.name}</span>
         </div>
 
         <DividerLine />
 
         <div>
           <label for="">电话：</label>
-          <span>13824453814</span>
+          <span>{basicInfo.phone}</span>
         </div>
 
         <DividerLine />
 
         <div>
           <label for="">邮箱：</label>
-          <span>wiizard-chen@outlook.com</span>
+          <span>{basicInfo.email}</span>
         </div>
 
         <DividerLine />
 
         <div>
           <label for="">应聘：</label>
-          <span>高级前端开发工程师</span>
+          <span>{basicInfo.job}</span>
         </div>
       </div>
     </div>

@@ -4,7 +4,6 @@ import UnoCSS from "unocss/vite";
 import presetIcons from "@unocss/preset-icons";
 import presetUno from "@unocss/preset-uno";
 import presetAttributify from "@unocss/preset-attributify";
-// import devtools from 'solid-devtools/vite';
 
 export default defineConfig({
   plugins: [

@@ -1,11 +1,13 @@
+import { eduInfo } from "./resumeContent";
+
 const EduInfo = () => {
   return (
     <div class="area">
       <h2>教育经历</h2>
       <div class="edu-title">
-        <h3>广州大学</h3>
-        <h3>2012-2016</h3>
-        <h3>本科( 统一招生)</h3>
+        <h3>{eduInfo.school}</h3>
+        <h3>{eduInfo.graduation}</h3>
+        <h3>{eduInfo.grade}</h3>
       </div>
     </div>
   );

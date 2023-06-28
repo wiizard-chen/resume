@@ -1,5 +1,5 @@
 import SolidMarkdown from "solid-markdown";
-import intergrationExperience from "./resumeContent";
+import { intergrationExperience } from "./resumeContent";
 
 // 支持 markdown 语法
 const WorkList = (props: {
