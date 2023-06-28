@@ -41,7 +41,7 @@ const BasicInfo: Component = () => {
 
         <div>
           <label for="">应聘：</label>
-          <span>前端开发工程师</span>
+          <span>高级前端开发工程师</span>
         </div>
       </div>
     </div>
