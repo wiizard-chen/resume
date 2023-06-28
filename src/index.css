@@ -91,7 +91,7 @@ body {
   /* color: rgb(12, 175, 230); */
   line-height: 24px;
   list-style: none;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .work-responsible li:before {
@@ -111,8 +111,5 @@ body {
 
 .work-description :first-child {
   font-weight: bold;
-}
-
-li > span {
-  color: #000;
+  font-size: 16px;
 }
